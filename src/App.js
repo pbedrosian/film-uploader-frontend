@@ -1,7 +1,7 @@
 import React from 'react';
-import ImageUploader from 'react-images-upload';
-import S3FileUpload from 'react-s3'
 import UploadComponent from './uploadComponent';
+import { connect } from 'react-redux'
+
  
 class App extends React.Component {
 

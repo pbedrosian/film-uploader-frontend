@@ -1,12 +1,16 @@
 import React from 'react';
 import S3FileUpload from 'react-s3'
 
+const API_KEY = process.env.REACT_APP_ACCESS_KEY_ID;
+const SECRET_KEY = process.env.REACT_APP_SECRET_ACCESS_KEY;
+
+
 const config = {
     bucketName: 'myfilmphotobucket',
     // dirName: 'Enter Folder Name ', /* optional */
     region: 'us-east-1',
-    accessKeyId: 'AKIAI7FKA2XGDWFXRLVQ',
-    secretAccessKey: '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'
+    accessKeyId: {API_KEY},
+    secretAccessKey: {SECRET_KEY}
 }
 
 const upload = (e) =>{
